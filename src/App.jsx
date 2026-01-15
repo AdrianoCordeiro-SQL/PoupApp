@@ -1,10 +1,14 @@
 import { Aside } from './components/Aside'
 import { Container } from './components/container'
+import { Main } from './components/Main'
+import { Searchinput } from './components/SearchInput'
 function App() {
   return (
     <Container>
       <Aside />
-      <h1>poupapp</h1>
+      <Main>
+        <Searchinput />
+      </Main>
     </Container>
   )
 }
