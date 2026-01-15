@@ -7,6 +7,9 @@ import { Searchinput } from "./components/SearchInput";
 import { Typography } from "./components/Typography";
 import { DailyBudget } from "./components/DailyBudget";
 import { SavingStatus } from "./components/SavingsStatus";
+import { Transactions } from "./components/Transactions";
+
+import styles from './app.module.css'
 
 
 function App() {
@@ -14,16 +17,16 @@ function App() {
     <Container>
       <Aside />
       <Main>
-        <Searchinput />
-        <div>
+        <div className={styles.container}>
+          <Searchinput />
+          <div>
           <Typography variant="h1">Olá, Vinny!</Typography>
 
           <Typography variant="body">
             Veja como estão suas finanças hoje.
           </Typography>
-        </div>
-
-        <section>
+          </div>
+          <section className={styles.grid}>
           <Card>
             <Card.Header>Orçamento diário disponível:</Card.Header>
             <Card.Body>
@@ -40,14 +43,17 @@ function App() {
 
           <Card>
             <Card.Header>Movimentação financeira</Card.Header>
-            <Card.Body>R$ 200</Card.Body>
+            <Card.Body>
+              <Transactions />
+            </Card.Body>
           </Card>
 
           <Card>
             <Card.Header>Minhas contas</Card.Header>
             <Card.Body>R$ 200</Card.Body>
           </Card>
-        </section>
+          </section>
+        </div>
       </Main>
     </Container>
   );
