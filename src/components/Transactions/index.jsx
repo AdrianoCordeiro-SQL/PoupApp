@@ -1,3 +1,4 @@
+import styles from './transactions.module.css'
 import { Button } from '../Button'
 import { IconCurrency } from '../icons'
 import { TransactionItem } from '../TransactionItem'
@@ -28,7 +29,7 @@ export const Transactions = () => {
     return (
         <>
 
-            <ul>
+            <ul className={styles.list}>
                 {items.map((transactionItem, index) => {
 
                     return (
@@ -40,9 +41,12 @@ export const Transactions = () => {
                 })}
             </ul>
 
+            <div className={styles.actions}>
             <Button>
                 <IconCurrency /> Adicionar transação
             </Button>
+            </div>
+
 
         </>
     )

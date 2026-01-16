@@ -8,6 +8,7 @@ import { Typography } from "./components/Typography";
 import { DailyBudget } from "./components/DailyBudget";
 import { SavingStatus } from "./components/SavingsStatus";
 import { Transactions } from "./components/Transactions";
+import { Banks } from "./components/Banks";
 
 import styles from './app.module.css'
 
@@ -50,7 +51,9 @@ function App() {
 
           <Card>
             <Card.Header>Minhas contas</Card.Header>
-            <Card.Body>R$ 200</Card.Body>
+            <Card.Body>
+              <Banks />
+            </Card.Body>
           </Card>
           </section>
         </div>
