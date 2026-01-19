@@ -19,7 +19,7 @@ function App() {
       <Aside />
       <Main>
         <div className={styles.container}>
-          <Searchinput />
+          <Searchinput placeholder="Procure seu dinheiro..."/>
           <div>
           <Typography variant="h1">Olá, Vinny!</Typography>
 
