@@ -1,7 +1,7 @@
 
 import { BankItem } from "../BankItem";
 import { Button } from "../Button";
-import { IconWallet } from "../icons";
+import { IconWallet } from "../Icons";
 import styles from "./banks.module.css";
 
 export const Banks = () => {

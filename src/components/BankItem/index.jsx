@@ -1,4 +1,4 @@
-import { IconBank } from '../icons';
+import { IconBank } from '../Icons';
 import styles from './bankitem.module.css'
 const formater = new Intl.NumberFormat("pt-BR", { style: "currency", currency: "BRL" })
 
