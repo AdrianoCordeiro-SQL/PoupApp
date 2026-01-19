@@ -1,5 +1,7 @@
 
 import { BankItem } from "../BankItem";
+import { Button } from "../Button";
+import { IconWallet } from "../icons";
 import styles from "./banks.module.css";
 
 export const Banks = () => {
@@ -12,18 +14,17 @@ export const Banks = () => {
   return (
     <>
       <ul className={styles.list}>
-        {items.map((transactionItem, index) => {
-          return (
-            <li key={index}>
-              <BankItem item={BankItem} />
+        {items.map((bank) => (
+            <li key={bank.bank}>
+                <BankItem {...bank} />
             </li>
-          );
-        })}
+))}
+
       </ul>
 
       <div className={styles.actions}>
         <Button>
-          <IconCurrency /> Adicionar transação
+          <IconWallet /> Adicionar conta
         </Button>
       </div>
     </>
