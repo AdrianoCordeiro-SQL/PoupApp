@@ -1,6 +1,6 @@
 import styles from './transactions.module.css'
 import { Button } from '../Button'
-import { IconCurrency } from '../icons'
+import { IconCurrency } from '../Icons'
 import { TransactionItem } from '../TransactionItem'
 
 export const Transactions = () => {

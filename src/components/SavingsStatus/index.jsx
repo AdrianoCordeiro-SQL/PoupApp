@@ -1,4 +1,4 @@
-import { IconSavings } from '../icons'
+import { IconSavings } from '../Icons'
 import { ProgressBar } from '../ProgressBar'
 import styles from './savingsstatus.module.css'
 
